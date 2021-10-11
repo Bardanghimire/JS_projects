@@ -1,0 +1,171 @@
+*,*::after,*::after{
+    margin: 0;
+}
+
+:root{
+    --bgcolor:#00acf0b7;
+}
+header{
+    width: 100vw;
+    height: 20vh;
+    background-color: var(--bgcolor);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.logo{
+    margin-right: 50px;
+}
+.logo img{
+    width: 90px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+nav ul li{
+    list-style: none;
+    text-transform: uppercase;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0 30px;
+    margin-left: 5px;
+    padding: 5px 10px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    /* border: 2px solid; */
+}
+nav a:hover{
+    color: white;
+}
+nav a::before{
+    content: '';
+    display: block;
+    height: 2.5px;
+    background: black;
+    position: absolute;
+    left: 0;
+    top: 1.3em;
+    right: 0;
+    border-radius: 25%;
+    transform: scale(0,1);
+}
+nav a:hover::before{
+    transform: scale(1);
+    transition: transform 150ms ease-in;
+}
+
+#checkbox{
+    display: none;
+}
+@media screen and (max-width:810px){
+    header{
+        display: fixed;
+        width: 100%;
+        height: auto;
+    }
+    nav{
+        position: absolute;
+        top: 100%;
+    }
+    nav ul,header{
+        display: block;
+    }
+    nav{
+        background-color: var(--bgcolor);
+        width: 100%;
+        /* display: none; */
+        transform: scale(1,0);
+        transition: transform 350ms ease-in-out;
+        transform-origin: top;
+    }
+    nav a{
+        opacity: 0;
+        transition: opacity 250ms ease-in-out 250ms 250ms;
+    }
+    nav a:hover::before{
+        display: none;
+    }
+    header{
+        display: flex;
+        justify-content: center;
+    }
+    .logo img{
+        width: 135px;
+    }
+    #checkbox{
+        display: none;
+    }
+    #label_checkbox{
+        position: absolute;
+        left: 0;
+        top: 2.5em;
+        margin-left: 2em;
+        /* border: 2px solid; */
+        height: 75%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    #label_checkbox:hover{
+        cursor: pointer;
+    }
+    #label_checkbox span,
+    #label_checkbox span::before,
+    #label_checkbox span::after{
+        position: relative;
+        background-color: white;
+        height: 1.8px;
+        width: 1.7em;
+        border-radius: 10px;
+        /* border: 2px solid; */
+    }
+    #label_checkbox span::before,
+    #label_checkbox span::after{
+        content: ' ';
+        display: block;
+        position: absolute;
+    }
+    #label_checkbox span::before{
+        top: 7px;
+    }
+    #label_checkbox span::after{
+        bottom: 7px;
+    }
+    nav ul li{
+        margin-bottom: 1em;
+        margin-left: 0;
+        padding-left: 0;
+    }
+    #checkbox:checked ~ nav{
+        transform: scale(1);
+    }
+    #checkbox:checked ~ nav a{
+        opacity: 1;
+        transition: opacity 250ms ease-in-out 150ms;
+    }
+
+}
+footer{
+    width: 100vw;
+    height: 10vh;
+    background-color: var(--bgcolor);
+    text-align: center;
+    color:black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: larger;
+    position: absolute;
+    bottom: 0;
+}
+footer .last-sentence a{
+    text-decoration: none;
+    color: black;
+}
+.last-sentence a:hover{
+    color: rgb(66, 65, 65);
+}

@@ -1,0 +1,42 @@
+@media screen and (max-width: 1500px) {
+    nav{
+        flex-direction: column;
+        margin-bottom: 5.9em;
+        
+    }
+    .nav-left{
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-left ul{
+        margin: 1em;
+    }
+    hr{
+        height: 2px;
+        background-color: black;
+    }
+    .content-right{
+        display: none;
+    }
+    .h_article{
+        text-align: center;
+        flex-direction: column;
+    }
+    .H_articles{
+        overflow: hidden;
+    }
+    .h_articles{
+        padding: 0.5em;
+    }
+    .year-tic{
+        display: none;
+    }
+    .contact-page img{
+        flex-direction: column;
+
+    }
+    .nav-right{
+        width: 100%;
+        margin-top: 15px;
+    }
+}

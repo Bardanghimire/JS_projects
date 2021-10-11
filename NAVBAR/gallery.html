@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .gallery{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(55em,1fr));
+            grid-gap: 1.5em;
+        }
+        .gallery img{
+            width: 55em;
+            height: 25em;
+        }
+        .title{
+            color: rgb(117, 117, 117);
+            text-align: center;
+            padding: 2em;
+            font-size: 3rem;
+        }
+        .title:hover{
+            color: white;
+            cursor: pointer;
+        }
+        hr{
+            margin: 3em 2em;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">Images Collections</h1>
+    <hr>
+    <div class="gallery">
+        <img src="images/bg.jpg" alt="Picture for gallery">
+        <img src="images/img.jpg" alt="Picture for gallery">
+        <img src="images/only_green(medium).jpg" alt="Picture for gallery">
+        <img src="images/Team.jpg" alt="Picture for gallery">
+        <img src="images/sky.jpg" alt="Picture for gallery">
+        <img src="images/sky4.jpg" alt="Picture for gallery">
+        <img src="images/sky3.jpg" alt="Picture for gallery">
+        <img src="images/sky2.jpg" alt="Picture for gallery">
+        <img src="images/sky1.jpg" alt="Picture for gallery">
+    </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+Hello and welcome to my youTube channel
+
+Today In this video we will be making a simple and ancient game called TIC TAC TOE  
+
+so let's see the demo of what we are making
+
+This will be made in C PROGRAMMING 
+it is very simple game for begineer so let's start!
+
+
+
+
+THANKS FOR WATCHING THIS VIDEO 
+
+IF YOU WANT TO SEE ME MAKING SNAKE GAME IN C PROGRAMMING PLEASE TELL IN COMMENT BELOW
+
+AND PLEASE LIKE SHARE AND SUBSCRIBE THIS VIDEO

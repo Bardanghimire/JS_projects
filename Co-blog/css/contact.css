@@ -1,0 +1,73 @@
+.contact-page {
+  background-color: #f4fffd;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.contact {
+  width: 55vw;
+  height: 75vh;
+  border: 2px solid black;
+  padding: 4em;
+  border-radius: 10px;
+  box-shadow: black 3px 7px 11px;
+  margin-top: 3em;
+  margin-bottom: 1em;
+}
+
+#name_user,
+#email,
+#purpose {
+  width: 40vw;
+  height: 3.9em;
+  border-radius: 15px;
+  outline: none;
+  border: 2px solid black;
+  margin-top: 0.5em;
+  padding: 1em;
+  font-size: 1.19em;
+  font-family: var(--Rmono);
+}
+#message {
+  border-radius: 13px;
+  padding: 1em;
+  margin-top: 0.5em;
+  font-size: 1.1em;
+  border: 2px solid black;
+  font-family: var(--Rmono);
+  outline: none;
+  width: 40vw;
+  height: 30vh;
+}
+.contact p {
+  margin: 5px 0 5px 10px;
+  font-size: 1.5em;
+}
+.purpose {
+  margin-top: 10px;
+}
+#submit {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.5em;
+  margin: 1em 1.5em 5px 0;
+  border-radius: 10px;
+  background-color: cyan;
+  color: rgba(0, 0, 0, 0.911);
+  outline: none;
+  font-family: var(--uban);
+  
+}
+#submit:hover {
+  background-color: rgba(0, 255, 255, 0.63);
+  cursor: pointer;
+  box-shadow: aqua 2px 1px 11px;
+}
+.contact-page img {
+  position: absolute;
+  /* top: px; */
+  left: 113px;
+  width: 15em;
+}

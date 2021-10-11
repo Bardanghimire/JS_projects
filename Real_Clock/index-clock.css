@@ -1,0 +1,42 @@
+.img-clock{
+    position: relative;
+    width: 40vw;
+    height: 95vh;
+    background: url(clock.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /* border: 2px solid yellow; */
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+.same_prop{
+    position: absolute;
+    background-color: black;
+    transform-origin: bottom;
+}
+#hrs{
+    width: 10px;
+    height: 10em;
+    border-radius: 10px;
+    left: 266px;
+    top: 109px;
+    /* display:none; */
+}
+#min{
+    width: 8px;
+    height: 12em;
+    border-radius: 10px;
+    left: 267.1912px;
+    top: 87px;
+    /* display: none; */
+}
+#sec{
+    width: 6px;
+    height: 13em;
+    border-radius: 10px;
+    left: 269px;
+    top: 71px;
+    /* display: none; */
+}

@@ -1,0 +1,23 @@
+:root{
+    --bgcolor: rgb(0, 140, 255);
+}
+
+.max-widht1{
+    max-width: 80vw;
+}
+
+.max-widht2{
+    max-width: 60vw;
+}
+.m-auto{
+    margin: auto;
+}
+
+
+.border{
+    border: 2px solid black;
+}
+.end{
+    align-self: flex-end;
+
+}

@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+body{
+    perspective: 1500px;
+}
+.box{
+    width: 450px;
+    height: 450px;
+    border: 2px solid;
+    position: relative;
+}
+
+.front{
+    background: rgba(255, 0, 0, 0.5);
+    transform: translateX(30px) translateZ(450px) translateY(440px)
+}
+.left{
+     background-color: rgba(0, 255, 255, 0.5);
+    transform: translateX(-1090px) translateZ(250px) translateY(430px) rotateY(-90deg)
+}
+.right{
+    background-color: rgba(0, 255, 13, 0.5);
+    transform: translateX(550px) translateZ(250px) translateY(130px) rotateY(90deg);
+}
+.up{
+    background-color: rgba(76, 0, 255, 0.5);
+    transform: translateX(550px) translateZ(250px) translateY(130px) rotateX(90deg);
+}
+.down{
+    background-color: rgb(255, 255, 0,0.5);
+    transform: translateX(550px) translateZ(250px) translateY(580px) rotateX(-90deg);
+}
+.back{
+    background: rgba(255, 0, 234, 0.5);
+    transform: translateX(-580px) translateZ(-450px) translateY(830px);
+}

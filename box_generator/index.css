@@ -1,0 +1,60 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: azure;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1em;
+
+}
+
+.container{
+    margin: auto;
+    text-align: center;
+    width: 75%;
+    background-color: beige;
+    box-shadow: 0 0 10px cyan;
+
+
+}
+.title{
+    padding: 10px;
+    color: darkblue;
+    
+}
+.btn{
+    padding: 10px 15px;
+    background-color: lightblue;
+    color: darkblue;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    border-color: rgb(0, 4, 255);
+    font-size: 15px;
+}
+
+.box-generation-space{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    
+}
+.box-generation-space div{
+    
+    width: 50px;
+    height: 50px;
+    background-color: orangered;
+    color: peachpuff;
+    padding: 2em;
+    background-image: url(bipisha_on_night.jpg);
+    background-size: 100% 100%;
+    border: 1px solid;
+    box-shadow: 0 0 10px darkcyan;
+
+    background-repeat: no-repeat;
+    margin: 10px;
+    /* display: none; */
+
+}
